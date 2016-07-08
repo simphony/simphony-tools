@@ -17,4 +17,5 @@ setup(
     long_description=README_TEXT,
     install_requires=INSTALL_REQUIRES,
     packages=find_packages(),
+    entry_points={'simphony': ['tools = tools']}, 
 )
