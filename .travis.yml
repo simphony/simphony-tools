@@ -1,7 +1,7 @@
 language: python
 
 virtualenv:
-  - system_site_packages: true
+  system_site_packages: true
 
 before_install:
   - SITE_PKG_DIR=$VIRTUAL_ENV/lib/python$TRAVIS_PYTHON_VERSION/site-packages
