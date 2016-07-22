@@ -6,7 +6,7 @@ virtualenv:
 before_install:
   - SITE_PKG_DIR=$VIRTUAL_ENV/lib/python$TRAVIS_PYTHON_VERSION/site-packages
   - rm -f $VIRTUAL_ENV/lib/python$TRAVIS_PYTHON_VERSION/no-global-site-packages.txt
-  - sudo apy-get install python-scipy
+  - sudo apt-get install python-scipy
 
 install:
   - pip install -r requirements.txt
