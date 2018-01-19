@@ -17,5 +17,6 @@ setup(
     long_description=README_TEXT,
     install_requires=INSTALL_REQUIRES,
     packages=find_packages(),
-    entry_points={'simphony': ['tools = tools']}, 
+    entry_points={'simphony': ['tools = tools'],
+                  'console_scripts': ['cuds2dot = tools.cuds2dot:main']},
 )
